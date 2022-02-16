@@ -1,7 +1,7 @@
 window.pdp = {};
 
 const reactChart = document.createElement('header-react');
-reactChart.setAttribute('person', 'Ishant sharma');
+reactChart.setAttribute('person', 'Sachin 10kar');
 reactChart.setAttribute('class', 'react');
 const reactContainer = document.getElementById('react-element');
 if (reactContainer.children.length > 0) {
