@@ -1,5 +1,14 @@
 window.pdp = {};
 
+const reactChart = document.createElement('header-react');
+reactChart.setAttribute('person', 'Ishant sharma');
+reactChart.setAttribute('class', 'react');
+const reactContainer = document.getElementById('react-element');
+if (reactContainer.children.length > 0) {
+  reactContainer.removeChild(reactContainer.children[0]);
+}
+reactContainer.appendChild(reactChart);
+
 window.pdp.cart = {
   count: 0,
   addToCart() {
@@ -15,5 +24,5 @@ window.pdp.product = {
     window.pdp.product.name = name;
     window.pdp.product.image = image;
     window.dispatchEvent(new Event('productChange'));
-  }
+  },
 };
