@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+// import './App.css';
+import styles from './App.module.css';
+
+{
+  /* <style>
+.headerStyle{
+    background-color:orange;
+}
+</style> */
+}
 
 function App({ person }) {
-  useEffect(() => {
-    // const personName =
-    //   document.querySelector('header-react').attributes['persons'].value;
-  }, []);
-
   return (
-    <div>
+    <div className={styles.headerStyle}>
       <header>Vishnu T K </header>
-      {/* <p>List of persons = {{ persons }}</p> */}
       <p>Name of person ={person} </p>
     </div>
   );
