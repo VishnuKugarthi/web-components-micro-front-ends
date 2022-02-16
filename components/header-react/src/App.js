@@ -12,7 +12,7 @@ import styles from './App.module.css';
 
 function App({ person }) {
   return (
-    <div className={styles.headerStyle}>
+    <div className='headerStyle'>
       <header>Vishnu T K </header>
       <p>Name of person ={person} </p>
     </div>

@@ -9,6 +9,15 @@ if (reactContainer.children.length > 0) {
 }
 reactContainer.appendChild(reactChart);
 
+const reactAlert = document.createElement('alert-react');
+reactAlert.setAttribute('person', 'David warner');
+reactAlert.setAttribute('class', 'aus-cricketer');
+const alertContainer = document.getElementById('react-alert-element');
+if (alertContainer.children.length > 0) {
+  alertContainer.removeChild(alertContainer.children[0]);
+}
+alertContainer.appendChild(reactAlert);
+
 window.pdp.cart = {
   count: 0,
   addToCart() {
