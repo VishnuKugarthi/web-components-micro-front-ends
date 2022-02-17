@@ -24,6 +24,8 @@ function App({ person }) {
   return (
     <div className='container'>
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
+      <h3>header-react application</h3>
+
       <div>
         <header>Vishnu T K </header>
         <p>Name of person ={person} </p>

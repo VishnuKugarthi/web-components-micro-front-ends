@@ -1,5 +1,9 @@
 window.pdp = {};
 
+const author = {
+  name: 'Rohit sharma',
+};
+
 const reactChart = document.createElement('header-react');
 reactChart.setAttribute('person', 'Sachin 10kar');
 reactChart.setAttribute('class', 'react');
@@ -10,7 +14,7 @@ if (reactContainer.children.length > 0) {
 reactContainer.appendChild(reactChart);
 
 const reactAlert = document.createElement('alert-react');
-reactAlert.setAttribute('person', 'David warner');
+reactAlert.setAttribute('person', author.name);
 reactAlert.setAttribute('class', 'aus-cricketer');
 const alertContainer = document.getElementById('react-alert-element');
 if (alertContainer.children.length > 0) {

@@ -1,20 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-const davidStyle = {
-  margin: '2rem',
+const davidStyle = {};
+
+const styles = `
+
+.App {
+  background: yellow;
+  padding: 1em;
+  color: black;
+}
+
+margin: '2rem',
   padding: '1rem',
   backgroundColor: 'green',
-};
+`;
 
 function App({ person }) {
   return (
     <div className='App'>
+      <style dangerouslySetInnerHTML={{ __html: styles }}></style>
+      <h3>alert-react application</h3>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <p>Warning alert - Due to covid parcels may delay.</p>
         <a
           className='App-link'
           href='https://reactjs.org'
