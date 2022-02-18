@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MyButton from './components/myButton';
 
 const davidStyle = {};
 
@@ -24,6 +25,9 @@ function App({ person }) {
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>Warning alert - Due to covid parcels may delay.</p>
+        <div>
+          <MyButton />
+        </div>
         <a
           className='App-link'
           href='https://reactjs.org'

@@ -18,17 +18,24 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
 import App from './App';
 
 export default class HeaderReactComponent extends HTMLElement {
   person = '';
   connectedCallback() {
+    // this.shadowRoot.appendChild(template.content.cloneNode(true));
     // -------------
     this._innerHTML = this.innerHTML;
     this.person = this.getAttribute('person');
     // -------------
 
     this.root = this.attachShadow({ mode: 'open' });
+    this._emotionCache = createCache({
+      key: 'whatevs',
+      container: this.shadowRoot,
+    });
     this.render();
   }
 
@@ -37,7 +44,12 @@ export default class HeaderReactComponent extends HTMLElement {
   }
 
   render() {
-    ReactDOM.render(<App person={this.person} />, this.root);
+    ReactDOM.render(
+      <CacheProvider value={this._emotionCache}>
+        <App person={this.person} />
+      </CacheProvider>,
+      this.root
+    );
   }
 }
 

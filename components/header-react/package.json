@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.5.5",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.2",
+    "@mui/styled-engine-sc": "^5.4.2",
     "@svgr/webpack": "4.3.2",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.6",
@@ -40,6 +44,7 @@
     "sass-loader": "^10.1.1",
     "semver": "6.3.0",
     "style-loader": "1.0.0",
+    "styled-components": "^5.3.3",
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.2",
     "url-loader": "2.1.0",
