@@ -15,7 +15,12 @@ function App() {
 
   // console.log('myStyles = ', myStyles);
   return (
-    <div className='App' id='mainRoot'>
+    <div
+      className='App'
+      id='mainRoot'
+      style={{
+        fontFamily: 'IBM Plex Sans, Helvetica Neue, Arial, sans-serif',
+      }}>
       {/* <link rel='stylesheet' href={JSON.stringify(myStyles)} /> */}
       {/* <style dangerouslySetInnerHTML={{ __html: internalStyles }}></style> */}
       <header className='App-header'>

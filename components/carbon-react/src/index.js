@@ -15,8 +15,16 @@ const styles = [carbonCss];
 
 console.log('styles = ', styles);
 
+const MainStyles = {
+  fontWeight: '400 !important',
+  fontFamily: 'IBM Plex Sans, Helvetica Neue, Arial, sans-serif !important',
+  mozOsxFontSmoothing: 'grayscale !important',
+  webkitFontSmoothing: 'antialiased !important',
+  textRendering: 'optimizeLegibility !important',
+};
+
 ReactDOM.render(
-  <root.div className='quote'>
+  <root.div>
     <React.StrictMode>
       <App />
       <style type='text/css'>{styles}</style>
