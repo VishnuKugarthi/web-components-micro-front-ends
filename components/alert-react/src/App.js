@@ -21,7 +21,7 @@ function App({ person }) {
   return (
     <div className='App'>
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
-      <h3>alert-react application</h3>
+      <h3>Alert-react application</h3>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
         <p>Warning alert - Due to covid parcels may delay.</p>

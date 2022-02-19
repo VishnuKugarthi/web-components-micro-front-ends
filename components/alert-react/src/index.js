@@ -21,6 +21,15 @@ import ReactDOM from 'react-dom';
 import createCache from '@emotion/cache';
 import { CacheProvider } from '@emotion/react';
 import App from './App';
+// import './carbon.scss';
+// import './index.scss';
+
+// const template = document.createElement('template');
+// template.innerHTML = `
+// <style>
+// @import "carbon-components/scss/globals/scss/styles.scss";
+// </style>
+// <button>Sup?</button>`;
 
 export default class HeaderReactComponent extends HTMLElement {
   person = '';
@@ -31,7 +40,8 @@ export default class HeaderReactComponent extends HTMLElement {
     this.person = this.getAttribute('person');
     // -------------
 
-    this.root = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
+    // this.shadowRoot.appendChild(template.content.cloneNode(true));
     this._emotionCache = createCache({
       key: 'whatevs',
       container: this.shadowRoot,
@@ -48,7 +58,7 @@ export default class HeaderReactComponent extends HTMLElement {
       <CacheProvider value={this._emotionCache}>
         <App person={this.person} />
       </CacheProvider>,
-      this.root
+      this.shadowRoot
     );
   }
 }
