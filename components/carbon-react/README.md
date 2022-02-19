@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 https://tinloof.com/blog/using-css-files-in-web-components
+
+react-shadow - https://www.npmjs.com/package/react-shadow
