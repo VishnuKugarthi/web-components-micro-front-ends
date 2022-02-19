@@ -354,7 +354,7 @@ module.exports = function (webpackEnv) {
         },
         {
           test: /\.css$/,
-          use: ['css-loader'],
+          use: ['to-string-loader', 'css-loader'],
         },
         // Handle node_modules packages that contain sourcemaps
         // shouldUseSourceMap && {
