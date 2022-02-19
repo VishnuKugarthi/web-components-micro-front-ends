@@ -1,0 +1,11 @@
+// Global styles
+// To use 16 column variant of the grid, you need to enable the grid-columns-16
+// feature flag before including any imports in your Sass files.
+$feature-flags: (
+  grid-columns-16: true,
+);
+
+// https://www.carbondesignsystem.com/developing/react-tutorial/step-1#import-carbon-component-styles
+// @import 'carbon-components/scss/globals/scss/styles.scss';
+
+@import "../../node_modules/carbon-components/scss/globals/scss/styles.scss"
