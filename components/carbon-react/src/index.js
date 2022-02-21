@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import root from 'react-shadow/styled-components';
 import App from './App';
 // import './createShadowRoot'; // must be imported above css files
-// import carbonCss from './sample.module.css';
-import carbonCss from './styles/source.scss';
+import carbonCss from './styles/carbon.css';
+// import carbonCss from './styles/source.scss';
 // import './App.css';
 
 // import reportWebVitals from './reportWebVitals';

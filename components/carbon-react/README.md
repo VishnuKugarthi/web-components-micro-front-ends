@@ -73,3 +73,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 https://tinloof.com/blog/using-css-files-in-web-components
 
 react-shadow - https://www.npmjs.com/package/react-shadow
+
+
+----------------------------------------------------------------
+Production build time
+----------------------------------------------------------------
+importing scss in index file = 97 secs
+importing css in index file = 22 secs
+
+
+----------------------------------------------------------------
+npm start time
+----------------------------------------------------------------
+importing scss in index file = 7 secs
+importing css in index file = 6 secs
