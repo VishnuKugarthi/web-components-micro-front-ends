@@ -35,7 +35,9 @@ function App() {
   // linkElem.setAttribute('rel', 'stylesheet');
   // linkElem.setAttribute('href', myElementStyles);
 
-  // document.querySelector('#mainRoot').appendChild(linkElem);
+  const userId = document
+    .querySelector('icfs-uishell-react')
+    .getAttribute('userId');
 
   // console.log('myStyles = ', myStyles);
   return (
@@ -106,8 +108,7 @@ function App() {
                   prefix=''>
                   International Client Financing System
                   <span style={{ color: 'orange' }}>
-                    (POC - uiShell is coming from another app - UNDER
-                    CONSTRUCTION)
+                    (UNDER CONSTRUCTION ={userId})
                   </span>
                 </HeaderName>
 

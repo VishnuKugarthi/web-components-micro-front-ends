@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import MyButton from './components/myButton';
 
@@ -23,7 +23,7 @@ function App({ person }) {
       <style dangerouslySetInnerHTML={{ __html: styles }}></style>
       <h3>Alert-react application</h3>
       <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
+        {/* <img src={logo} className='App-logo' alt='logo' /> */}
         <p>Warning alert - Due to covid parcels may delay.</p>
         <div>
           <MyButton />

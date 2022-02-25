@@ -9,7 +9,7 @@ import carbonCss from './styles/carbon.css';
 
 // import reportWebVitals from './reportWebVitals';
 
-console.log('carbonCss = ', carbonCss);
+// console.log('carbonCss = ', carbonCss);
 
 const styles = [carbonCss];
 
